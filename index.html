@@ -4,9 +4,55 @@
     <meta charset="UTF-8">
     <title>44 Winter Street</title>
     <meta name="theme-color" content="#fffff8">
+    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great" rel="stylesheet">
   </head>
+  <style>
+    html {
+      height: 100%;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      background-color: #e5e3df;
+    }
+    main {
+      background-color: #a9daff;
+      padding: 1em;
+      font-family: 'Fredericka the Great', cursive;
+      text-align: right;
+    }
+    h1 {
+      margin: 0;
+      font-size: 64px;
+    }
+    iframe {
+      display: block;
+      margin: 0 auto;
+      flex-grow: 1;
+      width: 100%;
+      border-bottom: 1px solid #444444;
+    }
+  </style>
   <body>
-    <h1>Welcome to Winter Street!</h1>
-    <p>We're glad to have you</p>
+    <iframe
+        allowfullscreen
+        width="600"
+        height="450"
+        frameborder="0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUrz5E443lqMVpl9NeMCFLDuor2nylDxg&q=44+Winter+St,+Boston,+MA+02108">
+    </iframe>
+    <main>
+      <h1>44 Winter Street</h1>
+      <p>
+        Once upon a time there were four guys who lived above a GameStop.
+        Their names were
+        <a href="https://twitter.com/futurekennysf">Kenny</a>,
+        <a href="https://twitter.com/nikhilpunwaney">Nikhil</a>,
+        <a href="https://twitter.com/vriad">Colin</a>, and
+        <a href="https://twitter.com/gustafjt">Joel</a>.
+      </p>
+    </main>
   </body>
 </html>
