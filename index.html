@@ -1,87 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>44 Winter Street</title>
-    <meta name="theme-color" content="#fffff8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Fredericka+the+Great|Crimson+Text:400" rel="stylesheet">
+	<head>
+		<meta charset="UTF-8" />
+		<title>20 Ellery St</title>
+		<meta name="theme-color" content="#fffff8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="preload"
+			href="https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhTIfFd3A.woff2"
+			as="font"
+		/>
+		<link
+			rel="preload"
+			href="https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0ntnAOSFNuQsI.woff2"
+			as="font"
+		/>
+	</head>
+	<style>
+		/* latin */
+		@font-face {
+			font-family: "Crimson Text";
+			font-style: normal;
+			font-weight: 400;
+			src: local("Crimson Text Regular"), local("CrimsonText-Regular"),
+				url(https://fonts.gstatic.com/s/crimsontext/v10/wlp2gwHKFkZgtmSR3NB0oRJfbwhTIfFd3A.woff2)
+					format("woff2");
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+				U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+				U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		/* latin */
+		@font-face {
+			font-family: "Special Elite";
+			font-style: normal;
+			font-weight: 400;
+			src: local("Special Elite Regular"), local("SpecialElite-Regular"),
+				url(https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0ntnAOSFNuQsI.woff2)
+					format("woff2");
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6,
+				U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193,
+				U+2212, U+2215, U+FEFF, U+FFFD;
+		}
 
-    <!-- iPhone(first generation or 2G), iPhone 3G, iPhone 3GS -->
-    <link rel="apple-touch-icon" sizes="57x57" href="icons/touch-icon-iphone.png">
-    <!-- iPad and iPad mini @1x -->
-    <link rel="apple-touch-icon" sizes="76x76" href="icons/touch-icon-ipad.png">
-    <!-- iPhone 4, iPhone 4s, iPhone 5, iPhone 5c, iPhone 5s, iPhone 6, iPhone 6s, iPhone 7, iPhone 7s, iPhone8 -->
-    <link rel="apple-touch-icon" sizes="120x120" href="icons/touch-icon-iphone-retina.png">
-    <!-- iPad and iPad mini @2x -->
-    <link rel="apple-touch-icon" sizes="152x152" href="icons/touch-icon-ipad-retina.png">
-    <!-- iPad Pro -->
-    <link rel="apple-touch-icon" sizes="167x167" href="icons/touch-icon-ipad-pro.png">
-    <!-- iPhone X, iPhone 8 Plus, iPhone 7 Plus, iPhone 6s Plus, iPhone 6 Plus -->
-    <link rel="apple-touch-icon" sizes="180x180" href="icons/touch-icon-iphone-6-plus.png">
-    <!-- Android Devices High Resolution -->
-    <link rel="icon" sizes="192x192" href="icons/icon-hd.png">
-    <!-- Android Devices Normal Resolution -->
-    <link rel="icon" sizes="128x128" href="icons/icon.png">
-  </head>
-  <style>
-    html {
-      height: 100%;
-    }
-    body {
-      height: 100%;
-      margin: 0;
-      display: flex;
-      flex-direction: column;
-      background-color: #e5e3df;
-    }
-    footer {
-      background-color: #a9daff;
-      padding: 1em;
-      text-align: right;
-      border-top: 1px solid #444444;
-    }
-    h1 {
-      margin: 0;
-      font-size: 64px;
-      font-family: 'Fredericka the Great', cursive;
-      font-weight: 400;
-    }
-    p {
-      font-family: 'Crimson Text', serif;
-      font-weight: 400;
-      margin: 0;
-    }
-    iframe {
-      display: block;
-      margin: 0 auto;
-      flex-grow: 1;
-      width: 100%;
-    }
-  </style>
-  <body>
-    <iframe
-        allowfullscreen
-        width="600"
-        height="450"
-        frameborder="0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUrz5E443lqMVpl9NeMCFLDuor2nylDxg&q=44+Winter+St,+Boston,+MA+02108">
-    </iframe>
-    <footer>
-      <h1>44 Winter Street</h1>
-      <p>
-        Once upon a time there were four guys who lived above a GameStop.
-      </p>
-      <p>
-        Their names were
-        <a href="https://twitter.com/futurekennysf">Kenny</a>,
-        <a href="https://twitter.com/nikhilpunwaney">Nikhil</a>,
-        <a href="https://twitter.com/brandon_MIT">Brandon</a>, and
-        <a href="https://twitter.com/gustafjt">Joel</a>.
-      </p>
-      <p>
-      	Oh, and <a href="https://twitter.com/vriad">Colin</a> use to live there too.
-      </p>
-    </footer>
-  </body>
+		html {
+			height: 100%;
+		}
+		body {
+			height: 100%;
+			margin: 0;
+			display: flex;
+			flex-direction: column;
+			background-color: #e5e3df;
+		}
+		footer {
+			background-color: #b5efa7;
+			padding: 1em;
+
+			border-top: 1px solid #444444;
+			display: flex;
+			padding-bottom: 0;
+		}
+		h1 {
+			flex: 1;
+			margin: 0;
+			font-size: 64px;
+			font-family: "Special Elite", cursive;
+			font-weight: 400;
+		}
+		footer div {
+			text-align: right;
+			align-self: center;
+		}
+		p {
+			font-family: "Crimson Text", serif;
+			font-weight: 400;
+			margin: 0;
+		}
+		iframe {
+			display: block;
+			margin: 0 auto;
+			flex-grow: 1;
+			width: 100%;
+		}
+
+		@media screen and (max-width: 1080px) {
+			h1 {
+				font-size: 42px;
+			}
+			footer {
+				flex-direction: column;
+				padding-bottom: 0.5em;
+			}
+			footer div {
+				text-align: initial;
+				align-self: initial;
+			}
+		}
+	</style>
+	<body>
+		<iframe
+			allowfullscreen
+			width="600"
+			height="450"
+			frameborder="0"
+			src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBUrz5E443lqMVpl9NeMCFLDuor2nylDxg&q=20+Ellery+St,+Cambridge,+MA+02138"
+		>
+		</iframe>
+		<footer>
+			<h1>20 Ellery St #2</h1>
+			<div>
+				<p>
+					Blah blah blah text. Text will go here. Something funny and welcoming.
+				</p>
+				<p>
+					People people
+					<a href="">Faraaz</a>,
+					<a href="https://twitter.com/nikhilpunwaney">Nikhil</a>,
+					<a href="https://twitter.com/brandon_MIT">Brandon</a>, and
+					<a href="https://twitter.com/gustafjt">Joel</a>.
+				</p>
+			</div>
+		</footer>
+	</body>
 </html>
